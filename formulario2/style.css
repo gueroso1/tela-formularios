@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +8,7 @@
 
 main {
     background-color: #e0e0f8;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +17,7 @@ main {
 
 main h1 {
     color: #380b61;
+    margin-top: 2rem;
 }
 
 main p {
@@ -29,62 +30,88 @@ form {
     max-width: 90vw;
 }
 
-fieldset {
-    margin-bottom: 2rem;
-    border: 0;
-    display: flex;
-    gap: 20px;
-}
-
-fieldset div {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-fieldset label {
-    font-weight: bold;
-    color: #59429d;
-    margin-bottom: 10px;
-}
-
-fieldset input, .campo input {
-    padding: 10px;
-    border: 1px solid #ccc;
+input,
+select,
+textarea,
+.btn {
     border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
     font-size: 1.1rem;
-    margin-bottom: 1rem;
+    color: #380b61;
+    margin-top: 1rem;
 }
 
-fieldset input:focus {
+input:focus,
+select:focus,
+.campo textarea:focus {
+    background-color: #e0e0f8;
     outline: auto #59429d;
-    background-color: #E1E0FA;
 }
 
 .campo {
-    margin-bottom: 2rem;
+    border: 0;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column;   
+    margin-bottom: 2rem;   
 }
 
 .campo label {
-    display: flex;    
-    align-items: center;
     color: #59429d;
-    padding-left: 8px;
 }
 
-.devweb {
+.cuzin{   
     display: flex;
+    flex-direction: column;  
+}
+
+.sobrenome {
+    margin-top: 2rem;
 }
 
 #senioridade {
-    width: 100px;
-    padding: 4px;
-    font-size: 15px;
+    color: #59429d;
+    width: 130px;
 }
 
-.check {
-    display: flex;
+#tec label {
+    margin-right: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    font-size: 1.2rem;
+    background-color: #59429d;
+    border: 0;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 0.2rem 0.6rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.btn:hover {
+    background-color: #7d5ce0;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .2);
+    text-shadow: none;
 }
