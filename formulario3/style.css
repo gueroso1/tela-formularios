@@ -116,7 +116,6 @@ form {
 .campo input:focus {
     outline: 1px solid #6c63ff;
     background-color: #e0e0f8;
-    ;
 }
 
 /* botão */

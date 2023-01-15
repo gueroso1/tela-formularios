@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Formulário de Clientes</legend>
+                <br>
+
+                <div class="campo">
+                    <input type="text" name="nome" id="nome" required autocomplete="name" autofocus class="input-user">
+                    <label for="nome" class="input-label">Nome completo</label>
+                </div>
+
+                <div class="campo">
+                    <input type="text" name="email" id="email" required autocomplete="email" class="input-user">
+                    <label for="email" class="input-label">Email</label>
+                </div>
+
+                <div class="campo">
+                    <input type="tel" name="telefone" id="telefone" required autocomplete="tel" class="input-user">
+                    <label for="telefone" class="input-label">Telefone</label>
+                </div>
+
+                <div class="campo-genero">
+                    <label>Sexo:</label>
+                    <br><br>
+                    <div>
+                        <input type="radio" name="genero" id="feminino" checked>
+                        <label for="feminino">Feminino</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="genero" id="masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="genero" id="outros">
+                        <label for="outros">Outros</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="data" class="data">Data de Nascimento</label>
+                    <input type="date" name="data" id="data"> 
+                </div>
+
+                <div class="campo">
+                    <input type="text" name="cidade" id="cidade" required class="input-user">
+                    <label for="cidade" class="input-label">Cidade</label>
+                </div>
+
+                <div class="campo">
+                    <input type="text" name="estado" id="estado" required class="input-user">
+                    <label for="estado" class="input-label">Estado</label>
+                </div>
+
+                <div class="campo">
+                    <input type="text" name="endereço" id="endereço" required autocomplete="street-address" class="input-user">
+                    <label for="endereço" class="input-label">Endereço</label>
+                </div>
+
+                <input type="submit" value="Enviar" class="btn">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

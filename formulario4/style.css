@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form {
+    width: 85vw;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+fieldset {
+    padding: 1rem;
+    border: 1px solid dodgerblue;
+    width: 80vw;
+}
+
+fieldset legend {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid dodgerblue;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    position: relative; 
+}
+
+.campo input {
+    background: none;
+    width: 100%;
+    border: 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.campo label {
+    color: #fff;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-user:focus ~ .input-label,
+.input-user:valid ~ .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+.campo-genero {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.campo-genero div {
+    margin-bottom: 1rem;
+}
+
+#data {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    border: 0;
+}
+
+.data {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9rem;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195))
+}
